@@ -1,0 +1,106 @@
+/* Container for the application */
+.app-container {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Dragger */
+.upload-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.canvas-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.canvas {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border: 1px solid #a8098b;
+}
+
+.delete-button {
+  margin-top: 20px;
+}
+
+.ant-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.ant-layout-content {
+  flex: 1;
+}
+.ant-layout-footer {
+  background: #001529; 
+  color: #ffffff; /* text color */
+  text-align: center;
+  font-size: 14px;
+  margin-top:-64px;
+  height: 12;
+  padding: -24px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  ant-layout-header {
+    padding: 0 16px;
+  }
+  
+  .ant-typography {
+    font-size: 1.2rem;
+  }
+  .app-title {
+    font-size: 1.5rem;
+  }
+
+  .upload-container {
+    padding: 10px;
+  }
+
+  .canvas {
+    max-width: 100%;
+  }
+
+  .delete-button {
+    width: 100%;
+    font-size: 1rem;
+    border: red;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-title {
+    font-size: 1.2rem;
+  }
+
+  .upload-container {
+    padding: 5px;
+  }
+
+  .canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .delete-button {
+    font-size: 0.9rem;
+  }
+
+}
